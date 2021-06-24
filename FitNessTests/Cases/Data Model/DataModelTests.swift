@@ -7,15 +7,23 @@
 //
 
 import XCTest
+@testable import FitNess
 
 class DataModelTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+  
+  var sut: DataModel!
+  
+  override func setUpWithError() throws {
+    super.setUp()
+    sut = DataModel()
+  }
+  
+  override func tearDownWithError() throws {
+    sut = nil
+    super.tearDown()
+  }
+  
+  func testModel_whenStarted_goalIsNotReached() {
+    XCTAssertFalse(sut.goalReached, "goalReached should be false when the model is created")
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
 }

@@ -28,4 +28,8 @@
 
 import Foundation
 
-// Add the Data Model class here:
+class DataModel {
+  var goalReached: Bool {
+    false
+  }
+}
