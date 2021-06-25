@@ -22,6 +22,8 @@
 		D2A5F20B1F4A9144005CD714 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2A5F20A1F4A9144005CD714 /* Assets.xcassets */; };
 		D2A5F2211F4A96D0005CD714 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A5F2201F4A96D0005CD714 /* AppDelegate.swift */; };
 		E1619F832684D83E006FA487 /* DataModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1619F822684D83E006FA487 /* DataModelTests.swift */; };
+		E1619F862685C860006FA487 /* ViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1619F852685C860006FA487 /* ViewControllers.swift */; };
+		E1619F892685C8C2006FA487 /* RootViewController+Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1619F882685C8C2006FA487 /* RootViewController+Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		D2A5F20F1F4A9144005CD714 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2A5F2201F4A96D0005CD714 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1619F822684D83E006FA487 /* DataModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModelTests.swift; sourceTree = "<group>"; };
+		E1619F852685C860006FA487 /* ViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllers.swift; sourceTree = "<group>"; };
+		E1619F882685C8C2006FA487 /* RootViewController+Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RootViewController+Tests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 		0A21C7D621C6BF8B00169D8B /* FitNessTests */ = {
 			isa = PBXGroup;
 			children = (
+				E1619F872685C8AC006FA487 /* Test Extensions */,
+				E1619F842685C82B006FA487 /* TestClasses */,
 				0A21C7D921C6BF8B00169D8B /* Info.plist */,
 				0A21C7E321C70C5800169D8B /* Cases */,
 			);
@@ -197,6 +203,22 @@
 			path = "Data Model";
 			sourceTree = "<group>";
 		};
+		E1619F842685C82B006FA487 /* TestClasses */ = {
+			isa = PBXGroup;
+			children = (
+				E1619F852685C860006FA487 /* ViewControllers.swift */,
+			);
+			path = TestClasses;
+			sourceTree = "<group>";
+		};
+		E1619F872685C8AC006FA487 /* Test Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E1619F882685C8C2006FA487 /* RootViewController+Tests.swift */,
+			);
+			path = "Test Extensions";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -301,8 +323,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1619F892685C8C2006FA487 /* RootViewController+Tests.swift in Sources */,
 				E1619F832684D83E006FA487 /* DataModelTests.swift in Sources */,
 				0A21C7E021C6CF1200169D8B /* AppModelTests.swift in Sources */,
+				E1619F862685C860006FA487 /* ViewControllers.swift in Sources */,
 				0A21C7E221C70AE400169D8B /* StepCountControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
